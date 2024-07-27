@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.844);
+}
+.container {
+  width: 40%;
+  /* height: 85vh; */
+  background: linear-gradient(130deg, rgb(83, 152, 198), rgb(4, 35, 51));
+  margin: 2rem auto;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px black;
+}
+.navbar {
+  width: 90%;
+  margin: auto;
+  height: 12vh;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+}
+#search::placeholder {
+  font-size: 0.8rem;
+}
+#search {
+  width: 90%;
+  font-family: serif;
+  /* max-width: 30rem; */
+  height: 2.6rem;
+  border-radius: 33px;
+  padding: 8px 30px;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+}
+.btn {
+  font-weight: 300;
+  height: 2.6rem;
+  width: 3rem;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(98, 121, 159, 0.505);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+.btn-again {
+  font-weight: 300;
+  height: 2.6rem;
+  width: 3rem;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(6, 89, 104, 0.605);
+  cursor: pointer;
+}
+.btn-again:hover {
+  background-color: transparent;
+}
+.error {
+  display: none;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 14px;
+  padding-bottom: 1rem;
+  /* margin-top: 10px; */
+}
+
+.Weather {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.Weather {
+  /* display: none; */
+}
+.temp {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.Weather-img {
+  height: auto;
+  width: 10rem;
+  margin: 2rem;
+}
+.city {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 1px 1px rgba(24, 22, 18, 0.8);
+}
+
+.detail {
+  height: 11vh;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1.5rem auto;
+}
+.logo {
+  font-size: 2.3rem;
+}
+.icon {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.col {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+h3 {
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+.text {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: sans-serif; */
+  font-weight: 100;
+}
+
+@media (max-width: 1050px) {
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+    font-family: monospace;
+  }
+  .text {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 100;
+  }
+  .logo {
+    font-size: 1.9rem;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 60%;
+    /* height: 85vh; */
+    background: linear-gradient(130deg, rgb(83, 152, 198), rgb(4, 35, 51));
+    margin: 2rem auto;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    /* height: 85vh; */
+    background: linear-gradient(130deg, rgb(83, 152, 198), rgb(4, 35, 51));
+    margin: 2rem auto;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+  }
+}

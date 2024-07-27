@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <nav class="navbar">
+        <button class="btn-again">
+          <i class="fa-solid fa-repeat" style="color: #ffffff"></i>
+        </button>
+        <input
+          type="search"
+          name="name"
+          id="search"
+          spellcheck="false"
+          placeholder="Enter city name.."
+        />
+        <button class="btn">
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
+      </nav>
+
+      <div class="error">
+        <p>
+          Invalid
+          <span
+            >city name
+            <i
+              class="fa-solid fa-circle-exclamation fa-beat-fade"
+              style="color: #f33131"
+            ></i>
+          </span>
+        </p>
+      </div>
+
+      <div class="Weather">
+        <img src="" class="Weather-img" alt="" />
+        <h1 class="temp"></h1>
+        <h2 class="city">
+          Enter City Name :
+          <i class="fa-solid fa-city" style="color: #9fa3a8"></i>
+        </h2>
+
+        <div class="detail">
+          <div class="col">
+            <i class="fa-solid fa-cloud logo" style="color: #ffffff"></i>
+            <div class="icon">
+              <h2 class="text Humidity"></h2>
+              <h3>Humidity</h3>
+            </div>
+          </div>
+
+          <div class="col">
+            <i class="fa-solid fa-wind logo" style="color: #f1f4f8"></i>
+            <div class="icon">
+              <h2 class="text wind"></h2>
+              <h3>Wind Speed</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
